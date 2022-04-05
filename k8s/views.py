@@ -2,20 +2,8 @@ import json
 
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from .models import Member
 from .serializers import MemberSerializer
-from k8s.models import Member
-
-
-class GetDataAPI(APIView):
-    def get(self, request):
-        return Response("hello world")
-
-
-class SignInAPI(APIView):
-    def get(self, request):
-
-        return Response("test")
+from .models import Member
 
 
 class SignUpAPI(APIView):
